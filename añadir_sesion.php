@@ -14,6 +14,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="estilos.css">
+        <link rel="shortcut icon" href="images/icono.png">
 
 		<title>No+Panza</title>
 	</head>
@@ -27,7 +28,7 @@
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
 					<form id="registro" name="registro" autocomplete="off" action="añadir_sesion2.php" method="Post">
-                        
+
                         <input type="hidden" name="id"  value="<?php echo $id; ?>"/>
 					
 						<div class="form-group">

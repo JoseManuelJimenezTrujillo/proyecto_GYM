@@ -17,6 +17,7 @@ $resultado = $mysqli->query($sql);
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="css/jquery.dataTables.min.css">
+	<link rel="shortcut icon" href="images/icono.png">
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -71,7 +72,8 @@ $resultado = $mysqli->query($sql);
 				?>
 			</tbody>
 		</table>
-
+				<h2>Clientes satisfechos</h2>
+				<img src="images/manu.jpg" alt="grande">
 	</div>
 	</div>
 
