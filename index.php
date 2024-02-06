@@ -70,7 +70,7 @@ $resultado = $mysqli->query($sql);
 			</tbody>
 		</table>
 				<h2>Clientes satisfechos</h2>
-				<img src="images/manu" alt="grande">
+				<img src="images/manu.jpg" alt="grande">
 	</div>
 	</div>
 
