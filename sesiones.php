@@ -17,11 +17,13 @@ $fila = $resultado->fetch_assoc();
 
 
     <title>Partidas jugadas</title>
-    <table id="tabla" class="display" border="1">
+   
+</head>
+
+<body>
+<table id="tabla" class="display" border="1">
 			<thead>
 				<tr>
-					<th>ID Sesion</th>
-					<th>ID Usuario</th>
 					<th>Fecha</th>
                     <th>Hora de entrada</th>
                     <th>Hora de salida</th>
@@ -31,23 +33,20 @@ $fila = $resultado->fetch_assoc();
 				<?php
 				while ($fila = $resultado->fetch_assoc()) {
 					echo "<tr>";
-					echo "<td>$fila[ID_Sesion]</td>";
-					echo "<td>$fila[ID_Usuario]</td>";
 					echo "<td>$fila[Fecha]</td>";
                     echo "<td>$fila[Hora_de_entrada]</td>";
                     echo "<td>$fila[Hora_de_salida]</td>";
-                    echo "<td><a class='btn btn-danger' href='añadir_sesion.php?id=$fila[ID_Sesion]'>Añadir</td>";
+                    
 
 					echo "</tr>";
 				}
+                echo "";
 				?>
 			</tbody>
 		</table>
 
-</head>
 
-<body>
-   
+<a class='btn btn-danger' href='añadir_sesion.php?id=$id'>Añadir</a>
 
 </body>
 
