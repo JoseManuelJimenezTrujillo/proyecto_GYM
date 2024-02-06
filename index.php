@@ -59,7 +59,7 @@ $resultado = $mysqli->query($sql);
 				<?php
 				while ($fila = $resultado->fetch_assoc()) {
 					echo "<tr>";
-					echo "<td>$fila[Nombre]</td>";
+					echo "<td><a href='sesiones.php?id=$fila[ID]'$fila[Nombre]</td>";
 					echo "<td>$fila[Fecha_inscripcion]</td>";
 					echo "<td><a class='btn btn-danger' href='eliminar.php?id=$fila[ID]'>Eliminar</td>";
 					echo "</tr>";
