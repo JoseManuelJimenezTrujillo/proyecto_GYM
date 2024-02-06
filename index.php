@@ -1,6 +1,6 @@
 <?php
 require 'conexion.php';
-$sql = "SELECT * FROM clubdeportivo";
+$sql = "SELECT * FROM usuarios";
 $resultado = $mysqli->query($sql);
 
 ?>
@@ -37,7 +37,7 @@ $resultado = $mysqli->query($sql);
 <body>
 	<div class="container">
 		<div class="row">
-			<h1>Socios</h1>
+			<h1>Gimnasio No+Panza</h1>
 		</div>
 		<br>
 
@@ -51,10 +51,7 @@ $resultado = $mysqli->query($sql);
 			<thead>
 				<tr>
 					<th>Nombre</th>
-					<th>Telefono</th>
-					<th>Fecha de nacimiento</th>
-					<th>Categoría</th>
-					<th></th>
+					<th>Fecha de inscripcion</th>
 					<th></th>
 				</tr>
 			</thead>
@@ -63,13 +60,10 @@ $resultado = $mysqli->query($sql);
 				while ($fila = $resultado->fetch_assoc()) {
 					echo "<tr>";
 					echo "<td>$fila[Nombre]</td>";
-					echo "<td>$fila[Teléfono]</td>";
-					echo "<td>$fila[Fecha_de_nacimiento]</td>";
-					echo "<td>$fila[Categoría]</td>";
-					echo "<td><a class='btn btn-warning' href='editar.php?id=$fila[ID]'>Editar</td>";
+					echo "<td>$fila[Fecha_inscripcion]</td>";
 					echo "<td><a class='btn btn-danger' href='eliminar.php?id=$fila[ID]'>Eliminar</td>";
 					echo "</tr>";
-					$mysqli->close();
+					
 				}
 				?>
 			</tbody>
