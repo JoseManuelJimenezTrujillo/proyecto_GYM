@@ -20,8 +20,9 @@
 		$fecha = $_POST['fecha'];
 		$entrada = $_POST['entrada'];
 		$salida = $_POST['salida'];
-			
-		$sql = "INSERT INTO sesiones (Fecha, Hora_de_entrada, Hora_de_salida) VALUES ('$fecha', '$entrada', '$salida')";
+        $id=$_POST['id'];
+       
+		$sql = "INSERT INTO sesiones (Fecha, Hora_de_entrada, Hora_de_salida, Id_Usuario) VALUES ('$fecha', '$entrada', '$salida', '$id')";
 			
 		$resultado = $mysqli -> query($sql);
 

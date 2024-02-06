@@ -35,11 +35,11 @@
                         </div>
 						
 						<div class="form-group">
-							<label>Hora de entrada<input type="number" class="form-control" name="entrada" required></label>
+							<label>Hora de entrada<input type="text" class="form-control" name="entrada" maxlength="5" required></label>
 						</div>
 
                         <div class="form-group">
-							<label>Hora de salida<input type="number" class="form-control" name="salida" required></label>
+							<label>Hora de salida<input type="text" class="form-control" name="salida" maxlength="5" required></label>
 						</div>
 
 						<div class="form-group">
