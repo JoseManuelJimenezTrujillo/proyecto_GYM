@@ -40,8 +40,9 @@ $fila2 = $resultado2->fetch_assoc();
 </head>
 
 <body>
+    <div class="container">
 	<h1>Sesiones de <?php echo $fila2['Nombre']; ?></h1>
-<table id="tabla" >
+<table id="tabla" class="display" style="width:100%" >
 			<thead>
 				<tr>
 					<th>Fecha</th>
@@ -71,6 +72,7 @@ echo "<a class='btn btn-primary' href='index.php'>Volver</a>";
 echo "<a class='btn btn-danger' href='añadir_sesion.php?id=$id'>Añadir</a>";
 
 ?>
+</div>
 </body>
 
 </html>
