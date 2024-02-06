@@ -5,7 +5,7 @@ $sql = "SELECT * FROM sesiones where ID_Usuario=$id";
 $resultado = $mysqli->query($sql);
 $sql2 = "SELECT * FROM USUARIOS WHERE ID=$id";
 $resultado2=$mysqli->query($sql2);
-$fila = $resultado->fetch_assoc();
+
 $fila2 = $resultado2->fetch_assoc();
 ?>
 
