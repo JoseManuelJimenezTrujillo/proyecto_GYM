@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="estilos.css">
         <link rel="shortcut icon" href="images/icono.png">
 
-		<title>No+Panza</title>
+		<title>Gimnasio No+Panza</title>
 	</head>
 	<body>
 		<div class="container">

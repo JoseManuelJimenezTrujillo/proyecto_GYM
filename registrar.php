@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/estilos.css">
 		<link rel="shortcut icon" href="images/icono.png">
 		
-		<title>Club Deportivo La Venta</title>
+		<title>Gimnasio No+Panza</title>
 	</head>
 	<body>
 		<div class="container">

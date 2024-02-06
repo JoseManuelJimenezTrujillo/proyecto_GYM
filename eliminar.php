@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="shortcut icon" href="images/icono.png">
 		
-		<title>Gimnasio NoMasPanza</title>
+		<title>Gimnasio No+Panza</title>
 	</head>
 	<body>
 		<?php

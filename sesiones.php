@@ -28,7 +28,7 @@ $fila2 = $resultado2->fetch_assoc();
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.dataTables.min.js"></script>
 
-	<title>No+Panza</title>
+	<title>Gimnasio No+Panza</title>
 
 	<script>
 		$(document).ready( function () {
