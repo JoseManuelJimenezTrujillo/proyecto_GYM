@@ -8,6 +8,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="estilos.css">
+        <link rel="shortcut icon" href="images/icono.png">
 
 		<title>No+Panza</title>
 	</head>

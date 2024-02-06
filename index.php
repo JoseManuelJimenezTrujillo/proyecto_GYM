@@ -16,6 +16,7 @@ $resultado = $mysqli->query($sql);
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.dataTables.min.css">
+	<link rel="shortcut icon" href="images/icono.png">
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -23,7 +24,7 @@ $resultado = $mysqli->query($sql);
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.dataTables.min.js"></script>
 
-	<title>Club Deportivo La Venta</title>
+	<title>Gimansio No+Panza</title>
 
 	<script>
 		$(document).ready( function () {
