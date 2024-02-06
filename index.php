@@ -15,6 +15,7 @@ $resultado = $mysqli->query($sql);
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="css/jquery.dataTables.min.css">
 
 	<!-- Optional JavaScript -->
@@ -23,22 +24,24 @@ $resultado = $mysqli->query($sql);
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.dataTables.min.js"></script>
 
-	<title>Club Deportivo La Venta</title>
+	<title>Gimnasio No+Panza</title>
 
 	<script>
 		$(document).ready( function () {
 			$('#tabla').DataTable();
 		} );
 	</script>
-
+<header>
+<div class="row nombre">
+			<h1>Gimnasio No+Panza</h1>
+		</div>
+</header>
 
 </head>
 
 <body>
 	<div class="container">
-		<div class="row">
-			<h1>Gimnasio No+Panza</h1>
-		</div>
+		
 		<br>
 
 		<div class="row">

@@ -1,0 +1,8 @@
+.nombre {
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    background-color: aqua;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
