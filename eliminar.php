@@ -23,13 +23,13 @@
 			//Se ejecuta la sentencia y se guarda el resultado en $resultado
 			$resultado = $mysqli->query($sql);
 	
-			if($resultado>0){
-				echo "<p>El registro se ha eliminado correctamente</p>";
-			} else {
-				echo "<p>Ha habido un error al borrar el registro</p>";
+			if($resultado > 0 ){
+				echo "<p class='alert alert-primary'>Registro eliminado</p>";
+				
+			}else{
+				echo "<p <p class='alert alert-danger'>Ha habido un error</p>";
 			}
-	
-			echo "<p><a href='index.php'>Volver</a></p>"
+			echo "<p><a class='btn btn-primary' href='index.php'>Regresar</a></p>";
 			
 			
 		?>
