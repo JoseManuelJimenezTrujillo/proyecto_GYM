@@ -24,7 +24,7 @@ $resultado = $mysqli->query($sql);
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.dataTables.min.js"></script>
 
-	<title>Gimansio No+Panza</title>
+	<title>Gimnasio No+Panza</title>
 
 	<script>
 		$(document).ready( function () {
