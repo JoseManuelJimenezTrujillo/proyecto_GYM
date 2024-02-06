@@ -67,7 +67,9 @@ $fila2 = $resultado2->fetch_assoc();
 		</table>
 
 <?php
-echo "<a class='btn btn-danger' href='añadir_sesion.php?id=$id'>Añadir</a>"
+echo "<a class='btn btn-primary' href='index.php'>Volver</a>";
+echo "<a class='btn btn-danger' href='añadir_sesion.php?id=$id'>Añadir</a>";
+
 ?>
 </body>
 
