@@ -1,8 +1,27 @@
 .nombre {
     font-family:'Times New Roman', Times, serif;
     color: black;
-    background-color: aqua;
+    background-color: gold;
     display: flex;
     align-content: center;
     justify-content: center;
+}
+body{
+    background-color: black;
+    color: gold;
+}
+.columnas{
+    color: gold;
+}
+.display{
+    color:black;
+}
+.btn-primary{
+    color:black
+}
+.btn-danger{
+    color: black;
+}
+.table{
+    color:gold;
 }

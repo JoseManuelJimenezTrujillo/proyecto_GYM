@@ -51,9 +51,9 @@ $resultado = $mysqli->query($sql);
 		<br>
 		<br>
 
-		<table id="tabla" class="display" style="width:100%">
+		<table id="tabla" class="table" style="width:100%">
 			<thead>
-				<tr>
+				<tr class="columnas">
 					<th>Nombre</th>
 					<th>Fecha de inscripcion</th>
 					<th></th>
