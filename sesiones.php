@@ -21,6 +21,7 @@ $fila2 = $resultado2->fetch_assoc();
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.dataTables.min.css">
 	<link rel="shortcut icon" href="images/icono.png">
+	<link rel="stylesheet" href="estilos.css">
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -28,7 +29,7 @@ $fila2 = $resultado2->fetch_assoc();
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.dataTables.min.js"></script>
 
-	<title>No+Panza</title>
+	<title>Gimnasio No+Panza</title>
 
 	<script>
 		$(document).ready( function () {

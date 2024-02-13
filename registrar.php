@@ -7,10 +7,10 @@
 		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="estiloregistrar.css">
 		<link rel="shortcut icon" href="images/icono.png">
 		
-		<title>Club Deportivo La Venta</title>
+		<title>Gimnasio No+Panza</title>
 	</head>
 	<header>
 		

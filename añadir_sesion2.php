@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="estilos.css">
         <link rel="shortcut icon" href="images/icono.png">
 
-		<title>No+Panza</title>
+		<title>Gimnasio No+Panza</title>
 	</head>
 	<body>
     <?php
@@ -28,7 +28,7 @@
 		$resultado = $mysqli -> query($sql);
 
 		if($resultado > 0){
-			echo "<p class='alert alert-primary'>Sesión agregado</p>";
+			echo "<p class='alert alert-primary'>Sesión agregada</p>";
 		}else{
 			echo "<p class='alert alert-danger'>Ha habido un error</p>";
 		}

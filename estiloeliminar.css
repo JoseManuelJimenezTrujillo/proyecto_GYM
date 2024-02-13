@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: gold;
+}
+.columnas{
+    color: gold;
+}
+.display{
+    color:black;
+}
+.btn-primary{
+    color:black
+}
+.btn-danger{
+    color: black;
+}
+.table{
+    color:gold;
+}
+
+img{
+    width: 980px;
+}

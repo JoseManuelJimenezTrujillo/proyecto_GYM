@@ -8,8 +8,9 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="shortcut icon" href="images/icono.png">
+		<link rel="stylesheet" href="estilos.css">
 		
-		<title>Club Deportivo La Venta</title>
+		<title>Gimnasio No+Panza</title>
 	</head>
 	<header>
 		
