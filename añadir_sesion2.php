@@ -28,7 +28,7 @@
 		$resultado = $mysqli -> query($sql);
 
 		if($resultado > 0){
-			echo "<p class='alert alert-primary'>Sesión agregado</p>";
+			echo "<p class='alert alert-primary'>Sesión agregada</p>";
 		}else{
 			echo "<p class='alert alert-danger'>Ha habido un error</p>";
 		}
