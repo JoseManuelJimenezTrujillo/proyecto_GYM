@@ -51,11 +51,11 @@ $resultado = $mysqli->query($sql);
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="registrar.php">Registrar</a>
-          <a class="dropdown-item" href="#">Proximamente</a>
+          <a class="dropdown-item" href="error.php">Proximamente</a>
         </div>
       </li>
     </ul>
-	<a href="login.php" class="form-inline my-2 my-lg-0 nav-link">Login</a>
+	<a href="error.php" class="form-inline my-2 my-lg-0 nav-link">Login</a>
   </div>
 </nav>
 	</header>
