@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: grey;
     color: gold;
 }
 
@@ -8,7 +8,7 @@ body{
 }
 
 .display{
-    color:black;
+    color:grey;
 }
 .btn-primary{
     color:black

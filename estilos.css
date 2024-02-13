@@ -23,17 +23,15 @@ body{
     color: black;
 }
 .table{
-<<<<<<< HEAD
-    color:white;
-}
-.table-primary{
-    color: black;
-    background-color: black;
-=======
     color:gold;
 }
-
-img{
-    width: 980px;
->>>>>>> 3ea0da6e3668fcdefee7446724d89afd0e8d2947
+thead{
+    color:black;
+}
+.table-primary{
+    
+    background-color: black;
+}
+.nav{
+    color:gold;
 }
