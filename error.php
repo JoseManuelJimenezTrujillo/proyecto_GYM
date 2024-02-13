@@ -58,7 +58,8 @@ require 'conexion.php';
 
 </head>
 <body>
-<h1>OOPS! Vuelva mas tarde</h1>
-    <img src="images/ups.jpg" alt="ups">
+    <div class="d-flex flex-column ">
+		<h1 class="align-self-center align-self-xl-center align-self-lg-center align-self-md-center align-self-sm-center" style="color:mediumspringgreen">OOPS! Vuelva mas tarde</h1>
+		<img src="images/ups.jpg" alt="grande" style="width: 35%;" class="align-self-center align-self-xl-center align-self-lg-center align-self-md-center align-self-sm-center">
 </body>
 </html>
