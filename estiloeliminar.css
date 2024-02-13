@@ -14,10 +14,13 @@ body{
 .btn-danger{
     color: black;
 }
-.table{
-    color:gold;
+
+.alert-primary{
+    color: gold;
+    background-color: black;
 }
 
-img{
-    width: 980px;
+.btn-primary{
+    color: gold;
+    background-color: black;
 }
