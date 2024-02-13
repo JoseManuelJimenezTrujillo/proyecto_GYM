@@ -21,6 +21,7 @@ $fila2 = $resultado2->fetch_assoc();
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.dataTables.min.css">
 	<link rel="shortcut icon" href="images/icono.png">
+	<link rel="stylesheet" href="estilos.css">
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
