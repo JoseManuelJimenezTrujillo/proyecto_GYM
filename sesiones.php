@@ -63,9 +63,10 @@ $fila2 = $resultado2->fetch_assoc();
 
 </head>
 
-
 <body>
-	<h1>Sesiones de <?php echo $fila2['Nombre']; ?></h1>
+<div class="d-flex flex-column ">
+		<h1 class="align-self-center align-self-xl-center align-self-lg-center align-self-md-center align-self-sm-center">Sesiones de <?php echo $fila2['Nombre']; ?></h1>
+		</div>
 	<div class="d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center" style="width:100%">
 		<div class="tabla alig-items-center " style="width:85%; margin: auto;">
 			<table id="tabla" class="table table-primary " style="width:100%">
