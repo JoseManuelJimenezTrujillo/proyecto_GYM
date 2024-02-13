@@ -74,7 +74,9 @@ $fila2 = $resultado2->fetch_assoc();
 
 <body>
 	<h1>Sesiones de <?php echo $fila2['Nombre']; ?></h1>
-<table id="tabla" >
+	<div class="d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center" style="width:100%">
+		<div class="tabla alig-items-center " style="width:85%; margin: auto;">
+			<table id="tabla" class="table table-primary " style="width:100%">
 			<thead>
 				<tr>
 					<th>Fecha</th>
@@ -97,7 +99,9 @@ $fila2 = $resultado2->fetch_assoc();
                 echo "";
 				?>
 			</tbody>
-		</table>
+			</table>
+		</div>
+	</div>
 
 <?php
 echo "<a class='btn btn-primary' href='index.php'>Volver</a>";
