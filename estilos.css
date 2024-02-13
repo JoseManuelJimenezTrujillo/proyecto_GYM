@@ -23,16 +23,15 @@ body{
     color: black;
 }
 .table{
-
-    color:white;
-}
-.table-primary{
-    color: black;
-    background-color: black;
-
     color:gold;
 }
-
-img{
-    width: 980px;
+thead{
+    color:black;
+}
+.table-primary{
+    
+    background-color: black;
+}
+.nav{
+    color:gold;
 }
