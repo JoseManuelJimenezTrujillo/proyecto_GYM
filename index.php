@@ -15,8 +15,8 @@ $resultado = $mysqli->query($sql);
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="estilos.css">
 	<link rel="shortcut icon" href="images/icono.png">
 
 	<!-- Optional JavaScript -->
@@ -27,55 +27,76 @@ $resultado = $mysqli->query($sql);
 
 	<title>Gimnasio No+Panza</title>
 
-	<script>
+	<!-- <script>
 		$(document).ready( function () {
 			$('#tabla').DataTable();
 		} );
-	</script>
-<header>
-<div class="row nombre">
-			<h1>Gimnasio No+Panza</h1>
-		</div>
-</header>
+	</script> -->
+	<header>
+		
+	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <h1 class="navbar-brand">Gimnasio No+Panza</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Acciones
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="registrar.php">Registrar</a>
+          <a class="dropdown-item" href="#">Proximamente</a>
+        </div>
+      </li>
+    </ul>
+	<a href="login.php" class="form-inline my-2 my-lg-0 nav-link">Login</a>
+  </div>
+</nav>
+	</header>
 
 </head>
 
 <body>
-	<div class="container">
-		
-		<br>
-
-		<div class="row">
-		<a class='btn btn-primary' href='registrar.php'>Registrar</a>
+	<div class="container-fluid ">
+		<!-- <div class="row">
+			<a class='btn btn-primary' href='registrar.php'>Registrar</a>
+		</div> -->
+		<div class="d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center" style="width:100%">
+		<div class="tabla alig-items-center " style="width:85%; margin: auto;">
+			<table id="tabla" class="table table-primary " style="width:100%">
+				<thead>
+					<tr class="table-primary">
+						<th>Nombre</th>
+						<th>Fecha de inscripcion</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+					while ($fila = $resultado->fetch_assoc()) {
+						echo "<tr class='table'>";
+						echo "<td><a href='sesiones.php?id=$fila[ID]'>$fila[Nombre]</a></td>";
+						echo "<td>$fila[Fecha_inscripcion]</td>";
+						echo "<td><a class='btn btn-danger' href='eliminar.php?id=$fila[ID]'>Eliminar</td>";
+						echo "</tr>";
+					}
+					?>
+				</tbody>
+			</table>
 		</div>
-		<br>
-		<br>
+	</div>
+		<div class="d-flex flex-column ">
+		<h1 class="align-self-center align-self-xl-center align-self-lg-center align-self-md-center align-self-sm-center">Clientes satisfechos</h1>
+		<img src="images/manu.jpg" alt="grande" style="width: 35%;" class="align-self-center align-self-xl-center align-self-lg-center align-self-md-center align-self-sm-center">
+		</div>				
+	</div>
 
-		<table id="tabla" class="table" style="width:100%">
-			<thead>
-				<tr class="columnas">
-					<th>Nombre</th>
-					<th>Fecha de inscripcion</th>
-					<th></th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php
-				while ($fila = $resultado->fetch_assoc()) {
-					echo "<tr>";
-					echo "<td><a href='sesiones.php?id=$fila[ID]'>$fila[Nombre]</a></td>";
-					echo "<td>$fila[Fecha_inscripcion]</td>";
-					echo "<td><a class='btn btn-danger' href='eliminar.php?id=$fila[ID]'>Eliminar</td>";
-					echo "</tr>";
-					
-				}
-				?>
-			</tbody>
-		</table>
-				<h2>Clientes satisfechos</h2>
-				<img src="images/manu.jpg" alt="grande">
-	</div>
-	</div>
 
 
 </body>
