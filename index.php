@@ -27,11 +27,6 @@ $resultado = $mysqli->query($sql);
 
 	<title>Gimnasio No+Panza</title>
 
-	<!-- <script>
-		$(document).ready( function () {
-			$('#tabla').DataTable();
-		} );
-	</script> -->
 	<header>
 		
 	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">

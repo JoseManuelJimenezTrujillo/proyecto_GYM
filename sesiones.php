@@ -19,7 +19,7 @@ $fila2 = $resultado2->fetch_assoc();
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/jquery.dataTables.min.css">
+
 	<link rel="stylesheet" href="estilos.css">
 	<link rel="shortcut icon" href="images/icono.png">
 
@@ -31,11 +31,7 @@ $fila2 = $resultado2->fetch_assoc();
 
 	<title>Gimnasio No+Panza</title>
 
-	<!-- <script>
-		$(document).ready( function () {
-			$('#tabla').DataTable();
-		} );
-	</script> -->
+	
 	<header>
 		
 	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -64,11 +60,7 @@ $fila2 = $resultado2->fetch_assoc();
 </nav>
 	</header>
 
-	<script>
-		$(document).ready( function () {
-			$('#tabla').DataTable();
-		} );
-	</script>
+
 </head>
 
 
@@ -78,7 +70,7 @@ $fila2 = $resultado2->fetch_assoc();
 		<div class="tabla alig-items-center " style="width:85%; margin: auto;">
 			<table id="tabla" class="table table-primary " style="width:100%">
 			<thead>
-				<tr>
+				<tr class="table-primary">
 					<th>Fecha</th>
                     <th>Hora de entrada</th>
                     <th>Hora de salida</th>
