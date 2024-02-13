@@ -7,15 +7,15 @@
     justify-content: center;
 }
 body{
-    background-color: black;
+    background-color: grey;
     color: gold;
 }
 .columnas{
     color: gold;
 }
-.display{
+/* .display{
     color:black;
-}
+} */
 .btn-primary{
     color:black
 }
@@ -23,5 +23,9 @@ body{
     color: black;
 }
 .table{
-    color:gold;
+    color:white;
+}
+.table-primary{
+    color: black;
+    background-color: black;
 }
