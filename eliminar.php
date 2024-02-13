@@ -8,6 +8,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="shortcut icon" href="images/icono.png">
+		<link rel="stylesheet" href="estiloeliminar.css">
 		
 		<title>Gimnasio No+Panza</title>
 	</head>
