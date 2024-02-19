@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="estilos.css">
 
-		<title>Club Deportivo La Venta</title>
+		<title>Gimnasio No+Panza</title>
 	</head>
 	<body>
 		<div class="container">
@@ -28,38 +28,18 @@
 			<div class="row">
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
-					<form id="registro" name="registro" autocomplete="off" action="editar2.php" method="Post">
+					<form id="registro" name="registro" autocomplete="off" action="modificar2.php" method="Post">
 						<div class="form-group">
 							<label>Nombre<input type="text" class="form-control"name="Nombre" maxlength="50" required value="<?php echo $fila['Nombre']; ?>"></label>
 							<input type="hidden" name="id" value="<?php echo $fila['ID'];?>"> 
 						</div>
 						
 						<div class="form-group">
-							<label>Telefono<input type="text" class="form-control" name="Telefono" maxlength="9" required value="<?php echo $fila['Telefono']; ?>"></label>
+							<label>Fecha de inscripcion<input type="date" class="form-control" name="fecha" required value="<?php echo $fila['Fecha_de_nacimiento']; ?>"></label>
 						</div>
 						
 						<div class="form-group">
-							<label>Fecha de nacimiento<input type="date" class="form-control" name="Fecha_de_nacimiento" required value="<?php echo $fila['Fecha_de_nacimiento']; ?>"></label>
-						</div>
-						<div class="form-group">
-							<select name="Categoría" id="Categoría" class="form-control">
-							<?php	
-							if($fila['Categoría']=='Amateur'){
-							?>
-								<option selected>Amateur</option>
-								<option>Profesional</option>
-							<?php
-								}else{
-							?>
-								<option selected>Profesional</option>
-								<option>Amateur</option>
-							<?php
-								}
-							?>
-							</select>
-						</div>
-						<div class="form-group">
-						<input type="submit" class='btn btn-primary' value="Editar" >
+						<input type="submit" class='btn btn-primary' value="Confirmar cambios" >
 							
 						</div>
 					</form>
