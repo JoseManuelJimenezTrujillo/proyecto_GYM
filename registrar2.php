@@ -47,6 +47,7 @@
 	require 'conexion.php';
 
 	//obtengo los datos introducidos en el formulario anterior
+	$id = $_POST['id'];
 	$nombre = $_POST['nombre'];
 	$fecha = $_POST['fecha'];
 
