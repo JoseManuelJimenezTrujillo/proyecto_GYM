@@ -50,7 +50,7 @@ $resultado = $mysqli->query($sql);
         </div>
       </li>
     </ul>
-	<a href="index.php" class="form-inline my-2 my-lg-0 nav-link">Login</a>
+	<a href="index.php" class="form-inline my-2 my-lg-0 nav-link">Cerrar Sesion</a>
   </div>
 </nav>
 	</header>
