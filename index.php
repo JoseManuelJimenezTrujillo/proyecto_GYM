@@ -46,7 +46,7 @@
 			<input type="password" class="input" placeholder="Contraseña" name="contraseña" required>
 			<button type="submit" class="button">Iniciar sesión</button>
 		</form>
-		<div class="signup"><a href="crearcuenta.php">Crear cuenta nueva</a></div>
+		
 
 	</div>
 </body>

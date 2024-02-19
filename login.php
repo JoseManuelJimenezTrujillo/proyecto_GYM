@@ -72,7 +72,7 @@ if ($fila){
     echo "<h3>Usuario o contraseña incorrectos.</h3>";
     echo "</div>";
     echo "<div class='d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center' style='width:100%'>";
-    echo "<p><a href='index.php'> Volver</a></p>";
+    echo "<p><p><a href='index.php' class='btn btn-primary'>Volver</a></p>";
     echo "</div>";
 } 
 
