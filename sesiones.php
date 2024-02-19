@@ -4,7 +4,7 @@ $id = $_GET['id'];
 $sql = "SELECT * FROM sesiones where ID_Usuario=$id";
 $resultado = $mysqli->query($sql);
 $sql2 = "SELECT * FROM USUARIOS WHERE ID=$id";
-$resultado2=$mysqli->query($sql2);
+$resultado2 = $mysqli->query($sql2);
 
 $fila2 = $resultado2->fetch_assoc();
 ?>
@@ -31,76 +31,77 @@ $fila2 = $resultado2->fetch_assoc();
 
 	<title>Gimnasio No+Panza</title>
 
-	
-	<header>
-		
-	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-  <h1 class="navbar-brand">Gimnasio No+Panza</h1>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Acciones
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="registrar.php">Registrar</a>
-          <a class="dropdown-item" href="error.php">Proximamente</a>
-        </div>
-      </li>
-    </ul>
-	<a href="error.php" class="form-inline my-2 my-lg-0 nav-link">Login</a>
-  </div>
-</nav>
+	<header>
+
+		<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+			<h1 class="navbar-brand">Gimnasio No+Panza</h1>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Acciones
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="registrar.php">Registrar</a>
+							<a class="dropdown-item" href="error.php">Proximamente</a>
+						</div>
+					</li>
+				</ul>
+				<a href="error.php" class="form-inline my-2 my-lg-0 nav-link">Login</a>
+			</div>
+		</nav>
 	</header>
 
 
 </head>
 
 <body>
-<div class="d-flex flex-column ">
+	<div class="d-flex flex-column ">
 		<h1 class="align-self-center align-self-xl-center align-self-lg-center align-self-md-center align-self-sm-center">Sesiones de <?php echo $fila2['Nombre']; ?></h1>
-		</div>
+	</div>
 	<div class="d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center" style="width:100%">
 		<div class="tabla alig-items-center " style="width:85%; margin: auto;">
 			<table id="tabla" class="table table-primary " style="width:100%">
-			<thead>
-				<tr class="table-primary">
-					<th>Fecha</th>
-                    <th>Hora de entrada</th>
-                    <th>Hora de salida</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php
-				while ($fila = $resultado->fetch_assoc()) {
-					echo "<tr>";
-					echo "<td>$fila[Fecha]</td>";
-                    echo "<td>$fila[Hora_de_entrada]</td>";
-                    echo "<td>$fila[Hora_de_salida]</td>";
-                    
+				<thead>
+					<tr class="table-primary">
+						<th>Fecha</th>
+						<th>Hora de entrada</th>
+						<th>Hora de salida</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+					while ($fila = $resultado->fetch_assoc()) {
+						echo "<tr>";
+						echo "<td>$fila[Fecha]</td>";
+						echo "<td>$fila[Hora_de_entrada]</td>";
+						echo "<td>$fila[Hora_de_salida]</td>";
 
-					echo "</tr>";
-				}
-				
-                echo "";
-				?>
-			</tbody>
+
+						echo "</tr>";
+					}
+
+					echo "";
+					?>
+				</tbody>
 			</table>
+			<?php
+			echo "<a class='btn btn-primary' href='index.php'>Volver</a>";
+			echo "<a class='btn btn-danger' href='añadir_sesion.php?id=$id'>Añadir</a>";
+
+			?>
 		</div>
 	</div>
 
-<?php
-echo "<a class='btn btn-primary' href='index.php'>Volver</a>";
-echo "<a class='btn btn-danger' href='añadir_sesion.php?id=$id'>Añadir</a>";
 
-?>
 </body>
 
 </html>
