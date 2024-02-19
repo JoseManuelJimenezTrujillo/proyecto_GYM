@@ -79,6 +79,8 @@ $resultado = $mysqli->query($sql);
 						echo "<td><a href='sesiones.php?id=$fila[ID]'>$fila[Nombre]</a></td>";
 						echo "<td>$fila[Fecha_inscripcion]</td>";
 						echo "<td><a class='btn btn-danger' href='eliminar.php?id=$fila[ID]'>Eliminar</td>";
+						echo "<td><a class='btn btn-danger' href='modificar.php?id=$fila[ID]'>Modifi</td>";
+
 						echo "</tr>";
 					}
 					?>
