@@ -46,7 +46,7 @@ $resultado = $mysqli->query($sql);
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="registrar.php">Registrar</a>
-          <a class="dropdown-item" href="error.php">Proximamente</a>
+          <a class="dropdown-item" href="proximamente.php">Proximamente</a>
         </div>
       </li>
     </ul>
