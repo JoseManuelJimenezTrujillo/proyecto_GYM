@@ -70,6 +70,8 @@ $resultado = $mysqli->query($sql);
 						<th>Nombre</th>
 						<th>Fecha de inscripcion</th>
 						<th></th>
+						<th></th>
+						
 					</tr>
 				</thead>
 				<tbody>
@@ -78,9 +80,8 @@ $resultado = $mysqli->query($sql);
 						echo "<tr class='table'>";
 						echo "<td><a href='sesiones.php?id=$fila[ID]'>$fila[Nombre]</a></td>";
 						echo "<td>$fila[Fecha_inscripcion]</td>";
-						echo "<td><a class='btn btn-danger' href='eliminar.php?id=$fila[ID]'>Eliminar</td>";
-						echo "<td><a class='btn btn-danger' href='modificar.php?id=$fila[ID]'>Modifi</td>";
-
+						echo "<td><a class='btn btn-danger' href='eliminar.php?id=$fila[ID]'>Eliminar</a></td>";
+						echo "<td><a class='btn btn-warning'href='modificar.php?id=$fila[ID]'>Modificar </a></td>";
 						echo "</tr>";
 					}
 					?>
