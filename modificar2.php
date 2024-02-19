@@ -46,7 +46,7 @@
 
 			 //obtengo los datos introducidos en el formulario anterior
              $id = $_POST['id'];
-			 $nombre = $_POST['nombre'];
+			 $nombre = $_POST['Nombre'];
 			 $fecha= $_POST['fecha'];
 	 
 			 //se prepara la sentencia sql
@@ -55,7 +55,7 @@
 			 $resultado = $mysqli -> query($sql);
 	 
 			 if($resultado > 0 ){
-				 header("location: index.php");
+				 header("location: panel_de_control.php");
 			 }else{
 				 echo "<p class='alert alert-danger'>Ha habido un error</p>";
 			 }

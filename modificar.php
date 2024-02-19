@@ -60,7 +60,7 @@
 						</div>
 						
 						<div class="form-group">
-							<label>Fecha de inscripcion<input type="date" class="form-control" name="fecha" required value="<?php echo $fila['Fecha_de_nacimiento']; ?>"></label>
+							<label>Fecha de inscripcion<input type="date" class="form-control" name="fecha" required value="<?php echo $fila['Fecha_inscripcion']; ?>"></label>
 						</div>
 						
 						<div class="form-group">
