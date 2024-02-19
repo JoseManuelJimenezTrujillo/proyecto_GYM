@@ -47,7 +47,7 @@
 						</div>
 					</li>
 				</ul>
-				<a href="error.php" class="form-inline my-2 my-lg-0 nav-link">Login</a>
+				<a href="index.php" class="form-inline my-2 my-lg-0 nav-link">Login</a>
 			</div>
 		</nav>
 	</header>
