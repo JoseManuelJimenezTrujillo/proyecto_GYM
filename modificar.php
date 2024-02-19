@@ -22,10 +22,6 @@
 	<body>
 		<div class="container">
 			<div class="row">
-				<h1>Socios</h1>
-			</div>
-			
-			<div class="row">
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
 					<form id="registro" name="registro" autocomplete="off" action="modificar2.php" method="Post">
